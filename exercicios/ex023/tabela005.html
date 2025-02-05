@@ -17,10 +17,6 @@
         }
 
 
-        .destaque{
-
-        }
-
 
         caption{
             font-size: 1.3em;
@@ -31,20 +27,26 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        col.cnome{
+            background-color: aquamarine;
+        }
+        col.cgrupo{
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
 
     <table>
         <colgroup>
-            <col>
-            <col>
-            <col>
-            <col>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+            <col class="cprof">
         </colgroup>
         <caption>Cadastro</caption>
         <tr>
-            <th scope="col">Nome</th>
+            <th scope="col" class="cnome">Nome</th>
             <th scope="col">Sexo</th>
             <th scope="col">Idade</th>
             <th scope="col">Profissão</th>
@@ -69,7 +71,7 @@
             <td>Enfermeira</td>
         </tr>
 
-        <tr class="destaque">
+        <tr>
             <td>Rafael</td>
             <td>M</td>
             <td>33</td>
