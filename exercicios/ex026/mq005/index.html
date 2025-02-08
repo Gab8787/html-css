@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="item">
+            <ul>
+                <li><a href="#">op3</a></li>
+                <li><a href="#">op2</a></li>
+                <li><a href="#">op3</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    <main>
+        <article>
+            <h2>query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere provident esse voluptatem neque, fugit minus cupiditate. Rerum laboriosam saepe, reiciendis numquam facilis quo omnis quibusdam, consectetur dolore laborum error reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi nulla quisquam atque soluta eius amet vero incidunt maxime rem facilis omnis placeat ea magni hic asperiores veritatis consequatur ratione?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam a itaque sapiente optio enim necessitatibus eveniet minima? Neque qui, quo tenetur dicta aperiam molestiae. Ducimus nesciunt nisi cupiditate. Quisquam, blanditiis!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non alias distinctio est autem sunt ratione nemo laudantium perferendis commodi, ullam veritatis maiores veniam eveniet maxime deleniti quam ad magni assumenda!7</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, laborum aliquid nisi minus, voluptatem officiis dolor quam reiciendis facilis ullam maiores provident quia sint ratione ab quibusdam fugit, commodi doloremque.</p> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi inventore blanditiis consequuntur sit? Minima sit aspernatur doloremque enim in inventore temporibus praesentium incidunt, quaerat earum distinctio dignissimos quo. Explicabo?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis sit expedita fuga maxime soluta debitis aliquid assumenda cumque beatae aliquam provident voluptatibus, vero neque. Velit, iure voluptatem. Perferendis, ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit soluta voluptas eos excepturi laboriosam porro possimus, quis quaerat, quibusdam ut esse veritatis. Dignissimos esse quia amet ratione ad quam perspiciatis.</p>
+
+        </article>
+    </main>
+
+    <script>
+
+        function mudoutamanho(){
+            if(window.innerHTML >= 760){
+                item.style.display = 'block'
+                item.style.display = 'none'
+            }
+            else{
+                item.style.display = 'block'
+            }
+    
+        }
+
+
+
+
+
+
+
+        function clickMenu(){
+            if (item.style.display == 'block'){
+                item.style.display = 'none'
+            }
+            else{
+                item.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
